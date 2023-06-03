@@ -1,45 +1,59 @@
 {
-    "editor.fontSize": 16,
-    "editor.fontFamily": "Fira Code, Operator Mono",
-    "editor.fontLigatures": true,
-    "editor.wordWrap": "on",
-    "editor.minimap.enabled": false,
-    "editor.tokenColorCustomizations": {
+   "editor.fontSize": 16,
+   "editor.fontFamily": "Fira Code, Operator Mono",
+   "editor.fontLigatures": true,
+   "editor.wordWrap": "on",
+   "editor.minimap.enabled": false,
+   "editor.tokenColorCustomizations": {
       "textMateRules": [
-        {
-          "scope": "comment",
-          "settings": {
-            "fontStyle": "italic"
-          }
-        }
+         {
+            "scope": "comment",
+            "settings": {
+               "fontStyle": "italic"
+            }
+         }
       ]
-    },
-  
-    // Theme
-    "workbench.colorTheme": "Dracula",
-  
-    // config related to code formatting
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "[javascript]": {
+   },
+
+   "emojisense.unicodeCompletionsEnabled": true,
+   "emojisense.languages": {
+      "plaintext": {
+         //  "markupCompletionsEnabled": true,
+         "emojiDecoratorsEnabled": true
+      },
+      "javascript.validate.enable": false,
+      "javascript": true,
+      "javascriptreact": true,
+      "typescript": true,
+      "typescriptreact": true,
+      "python": true,
+      "css": true,
+      "html": true
+   },
+   // Theme
+   "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
+
+   // config related to code formatting
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "editor.formatOnSave": true,
+   "[javascript]": {
       "editor.formatOnSave": true,
       "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
+   },
+   "[javascriptreact]": {
       "editor.formatOnSave": true,
       "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "javascript.validate.enable": false, //disable all built-in syntax checking
-    "editor.codeActionsOnSave": {
+   },
+   "javascript.validate.enable": false, //disable all built-in syntax checking
+   "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true,
       "source.fixAll.tslint": true,
       "source.organizeImports": true
-    },
-    "eslint.alwaysShowStatus": true,
-    // emmet
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.includeLanguages": {
+   },
+   "eslint.alwaysShowStatus": true,
+   // emmet
+   "emmet.triggerExpansionOnTab": true,
+   "emmet.includeLanguages": {
       "javascript": "javascriptreact"
-    }
-  }
-  
+   }
+}
