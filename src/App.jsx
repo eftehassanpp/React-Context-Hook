@@ -1,11 +1,13 @@
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import ClickCounter from './RenderProps/ClickCounterProps';
+import HoverCounter from './RenderProps/HoverCounterProps';
+import User from './RenderProps/User';
 import './styles/App.css';
 function App() {
    return (
       <>
          <ClickCounter />
          <HoverCounter />
+         <User name={(isLoggedIn) => (isLoggedIn ? 'Efte H' : 'Guest')} />
       </>
    );
 }
