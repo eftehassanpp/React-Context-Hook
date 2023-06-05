@@ -7,22 +7,22 @@ ClickCounter;
 function App() {
     return (
         <>
-            <Counter
-                render={(count, incrementCounter) => (
+            <Counter>
+                {(count, incrementCounter) => (
                     <ClickCounter
                         count={count}
                         incrementCounter={incrementCounter}
                     />
                 )}
-            />
-            <Counter
-                render={(count, incrementCounter) => (
+            </Counter>
+            <Counter>
+                {(count, incrementCounter) => (
                     <HoverCounter
                         count={count}
                         incrementCounter={incrementCounter}
                     />
                 )}
-            />
+            </Counter>
         </>
     );
 }
