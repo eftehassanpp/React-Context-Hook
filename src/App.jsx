@@ -9,18 +9,16 @@ function App() {
         <>
             <Counter>
                 {(count, incrementCounter) => (
-                    <ClickCounter
-                        count={count}
-                        incrementCounter={incrementCounter}
-                    />
-                )}
-            </Counter>
-            <Counter>
-                {(count, incrementCounter) => (
-                    <HoverCounter
-                        count={count}
-                        incrementCounter={incrementCounter}
-                    />
+                    <>
+                        <ClickCounter
+                            count={count}
+                            incrementCounter={incrementCounter}
+                        />
+                        <HoverCounter
+                            count={count}
+                            incrementCounter={incrementCounter}
+                        />
+                    </>
                 )}
             </Counter>
         </>
