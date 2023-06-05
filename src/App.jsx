@@ -7,7 +7,7 @@ function App() {
       <>
          <ClickCounter />
          <HoverCounter />
-         <User name={(isLoggedIn) => (isLoggedIn ? 'Efte H' : 'Guest')} />
+         <User render={(isLoggedIn) => (isLoggedIn ? 'Efte H' : 'Guest')} />
       </>
    );
 }
