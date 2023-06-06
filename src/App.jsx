@@ -8,10 +8,22 @@ import './styles/App.css';
 export default class App extends React.Component {
     state = {
         theme: 'dark',
+        switchTheme: () => {
+            this.setState((preveState) => {
+                if (preveState.theme === 'dark') {
+                    return {
+                        theme: 'light',
+                    };
+                }
+                return {
+                    theme: 'dark',
+                };
+            });
+        },
     };
+
     render() {
         console.log('App rendered');
-        const { theme } = this.state;
         return (
             <div className="app">
                 <Counter>
@@ -22,10 +34,9 @@ export default class App extends React.Component {
                         />
                     )}
                 </Counter>
-                <ThemeContext.Provider
-                    value={{ theme: theme }}
-                ></ThemeContext.Provider>
-                <Section />
+                <ThemeContext.Provider value={this.state}>
+                    <Section />
+                </ThemeContext.Provider>
             </div>
         );
     }
