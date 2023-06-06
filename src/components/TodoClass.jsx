@@ -1,5 +1,5 @@
 import React from 'react';
-export default class Todo extends React.Component {
+export default class TodoClass extends React.Component {
     state = {
         todo: '',
         warning: null,

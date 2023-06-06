@@ -1,11 +1,11 @@
-import Todo from './components/TodoClass';
+import Counter from './components/Counter';
 import './styles/App.css';
 
 export default function App() {
     console.log('App rendered');
     return (
         <div className="app">
-            <Todo />
+            <Counter />
         </div>
     );
 }
